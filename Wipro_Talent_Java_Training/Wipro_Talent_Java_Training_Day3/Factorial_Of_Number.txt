@@ -1,0 +1,14 @@
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+ public int nFactorial(int input1){
+  int ans=1;
+  while(input1>=1)
+  {
+     ans*=input1;
+     input1--;
+  }
+  return ans;
+ }
+}

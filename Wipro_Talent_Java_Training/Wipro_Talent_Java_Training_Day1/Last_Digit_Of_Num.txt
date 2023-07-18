@@ -1,0 +1,11 @@
+//Main code
+import java.io.*;
+import java.util.*;
+
+class UserMainCode
+{
+    public int LastDigitOf(int input1){
+       return (Math.abs(input1%10));
+    }
+}
+//To see the clear view use README file

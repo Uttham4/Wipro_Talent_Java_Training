@@ -1,0 +1,25 @@
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+       public int digitSum(int input1){
+            int sum=0,digit=0,dig=0,result=0;
+            while(input1!=0)
+            {
+                 digit=input1%10;
+                 sum+=digit;
+                 input1=input1/10;
+            }
+            int sum1=sum;
+            while (sum1!=0)
+            {
+                dig=sum1%10;
+                result+=dig;
+                sum1=sum1/10;
+             }
+             if(result!=0)
+                 return result;
+             else
+                 return sum;
+       }
+}

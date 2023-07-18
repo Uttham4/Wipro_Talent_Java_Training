@@ -1,0 +1,14 @@
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+ public long nthFibonacci(int input1){
+ int val1=0,int val2=1,int temp=0;
+ for(int i=3;i<=input1;i++)
+ {
+    temp=val1+val2;
+    val1=val2;
+    val2=temp;
+ }
+ return temp;
+}

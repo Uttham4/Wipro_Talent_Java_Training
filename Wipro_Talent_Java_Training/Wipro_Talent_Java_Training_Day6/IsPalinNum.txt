@@ -1,0 +1,29 @@
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+    public int IsPalinNum(int input1){
+
+        int First_half=0;
+        String str1,str2="";
+        String str=Integer.toString(input1);
+        while(input1!=0)
+        {
+            First_half=input1%10;
+            input1=input1/10;
+            str1=Integer.toString(First_half);
+            str2=str2.concat(str1);
+        }
+        if(str.equals(str2))
+        {
+            return 2;
+        }
+        else
+        {
+            return 1;
+        }
+	}
+}
+
+
+

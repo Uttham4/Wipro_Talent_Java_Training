@@ -1,0 +1,21 @@
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+    public int allDigitsCount(int input1){
+        
+        int count=1;
+        int temp=input1;
+        for(int a=0;a<=6;a++)
+        {
+            if(temp/10!=10)
+            {
+                count++;
+                temp=(temp/10);
+            }
+            if(temp/10==0)
+                break;
+        }
+        return count;
+	}
+}

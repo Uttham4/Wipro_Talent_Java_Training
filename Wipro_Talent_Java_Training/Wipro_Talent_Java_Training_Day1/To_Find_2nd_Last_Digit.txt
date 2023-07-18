@@ -1,0 +1,20 @@
+//Main code
+import java.io.*;
+import java.util.*;
+
+class UserMainCode
+{
+    public int secondLastDigitOf(int input1){
+        int i=0;
+        if((input1<10)&&(input1>-10))
+        {
+            return -1;
+        }
+        else
+        {
+            i=input1/10;
+            return (Math.abs(i%10));
+        }
+    }
+}
+//To see the clear view use README file
